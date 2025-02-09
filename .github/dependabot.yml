@@ -11,6 +11,7 @@ registries:
   maven-github:
     type: maven-repository
     url: https://maven.pkg.github.com/derBobby
+    token: ${{secrets.ARTIFACTS_PASSWORD}}
 updates:
   - package-ecosystem: "github-actions" # See documentation for possible values
     directory: "/" # Location of package manifests
